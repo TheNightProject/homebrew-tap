@@ -1,15 +1,15 @@
 cask "claude-lens" do
-  version "0.1.5"
+  version "0.2.0"
 
   on_arm do
-    sha256 "15f134a96f0fbc3c9ad81df4ee89076113f68a7498c1de0fa256cc0d0ed570e5"
-    url "https://github.com/TheNightProject/claude-lens/releases/download/v0.1.5/Claude.Lens-0.1.5-arm64.dmg",
+    sha256 "ba6d4bf865a8a35fe27e03f1fd3045092341378220a0afc6512244487d896b02"
+    url "https://github.com/TheNightProject/claude-lens/releases/download/v0.2.0/Claude.Lens-0.2.0-arm64.dmg",
         verified: "github.com/TheNightProject/claude-lens/"
   end
 
   on_intel do
-    sha256 "ab5fc246305d9496605765475a7aa873f15570099e2bbadca1545e620d4f2d31"
-    url "https://github.com/TheNightProject/claude-lens/releases/download/v0.1.5/Claude.Lens-0.1.5.dmg",
+    sha256 "51c06bb23cdd3554517c4b048925f9ae5d9244947f0fa3c71de1de8edca66b77"
+    url "https://github.com/TheNightProject/claude-lens/releases/download/v0.2.0/Claude.Lens-0.2.0.dmg",
         verified: "github.com/TheNightProject/claude-lens/"
   end
 
