@@ -1,6 +1,6 @@
 cask "underlings" do
-  version "1.4.0"
-  sha256 "4fbe56c64704e62869a199703f4a3e41d754b38deceba1bb7e39ed4a21fd7c88"
+  version "1.4.1"
+  sha256 "8be0e845415a39573a0b092807029b110a38f82a185e6e1c5be36aa2d588cee7"
 
   url "https://github.com/TheNightProject/underlings/releases/download/v#{version}/Underlings-#{version}-arm64.zip",
       verified: "github.com/TheNightProject/underlings/"
