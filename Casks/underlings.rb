@@ -1,9 +1,8 @@
 cask "underlings" do
-  version "1.5.1"
-  sha256 "d2639dbb3f38a048b1705ddee7bbf52d82bf9cedb4769d6c47ef6c8926411a83"
+  version "1.5.2"
+  sha256 "1dd5f7884c238bccb5f6736db2ee1ea8c15076ace2738a13a7823c42271507cc"
 
-  url "https://github.com/TheNightProject/underlings/releases/download/v#{version}/Underlings-#{version}-arm64.zip",
-      verified: "github.com/TheNightProject/underlings/"
+  url "https://github.com/TheNightProject/underlings/releases/download/v#{version}/Underlings-#{version}-arm64.zip"
   name "Underlings"
   desc "Merge requests, tickets and a team of Claude Code agents in a little 3D office"
   homepage "https://github.com/TheNightProject/underlings"
@@ -18,8 +17,8 @@ cask "underlings" do
   app "Underlings.app"
 
   # The app is not notarised by Apple yet, so macOS would refuse to open it while it is quarantined.
-  postflight do
-    system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Underlings.app"]
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Underlings.app"], must_succeed: false
   end
 
   uninstall quit: "com.thenightproject.underlings"
